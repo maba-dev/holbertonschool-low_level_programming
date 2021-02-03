@@ -16,6 +16,6 @@ int	main(main)
 {
 	char c[] = "\"and that piece of art is useful\" - Dora Korpar, 2014-10-19"
 	ft_putchar(c)
-	return (0);
+	return (1);
 }
 
