@@ -5,17 +5,10 @@
  * Return: After printing, return 0
 */
 
-void	ft_putchar(char c)
+int	main(void)
 
 {
-	write(1, &c, 1);
-}
-
-int	main(main)
-
-{
-	char c[] = "\"and that piece of art is useful\" - Dora Korpar, 2014-10-19"
-	ft_putchar(c)
+	write(1, "and that piece of art is useful\" - Dora Korpar, 2014-10-19\n", 59);
 	return (1);
 }
 
