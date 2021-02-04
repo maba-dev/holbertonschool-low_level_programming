@@ -16,7 +16,7 @@ int	main(void)
 	i = 0;
 	while (i <= 9)
 	{
-		j = 0; 
+		j = 0;
 		while (j <= 9)
 		{
 			putchar(i + 48);
@@ -29,7 +29,6 @@ int	main(void)
 			j++;
 		}
 		i++;
-		
 	}
 	putchar('\n');
 	return (0);
