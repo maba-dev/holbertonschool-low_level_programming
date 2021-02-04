@@ -2,12 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+* more headers goes there
+* betty style doc for function main goes there
+* Return: Return description
+*/
 
 int	main(void)
-
+/* main - main description */
 {
 	int n;
 
