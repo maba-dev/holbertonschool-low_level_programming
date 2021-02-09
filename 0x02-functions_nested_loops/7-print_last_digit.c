@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
-* main - check the code for Holberton School students.
-*
-* Return: Always 0.
-*/
+ *print_last_digit - function to determine last digit
+ *@i: integer
+ *
+ *Return: the value of the last digit
+ */
 int	print_last_digit(int i)
 {
 	if (i >= 0)

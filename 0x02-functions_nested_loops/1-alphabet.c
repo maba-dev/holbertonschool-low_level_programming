@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
-* main - check the code for Holberton School students.
-* print_alphabet(void)
-* Return: Always 0.
+*print_alphabet- use only user defined variables to create output
+*
+*Return: print to stdout the alphabet, in lowercase, followed by a new line.
 */
 
 void	print_alphabet(void)

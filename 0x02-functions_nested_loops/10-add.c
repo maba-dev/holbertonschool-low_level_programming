@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
-* main - check the code for Holberton School students.
-*
-* Return: Always 0.
+* add - adds two integers together
+*@a: integer
+*@b: integer
+* Return: add two integer
 */
 
 int	add(int a, int b)

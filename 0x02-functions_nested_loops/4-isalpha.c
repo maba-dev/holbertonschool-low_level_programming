@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
-* main - check the code for Holberton School students.
-*
-* Return: Always 0.
+ * _isalpha - check c for alphabetic character
+ * @c: string
+ *
+ * Return: 1 if c is a letter, 0 if not
 */
-
 int	_isalpha(int c)
 
 {

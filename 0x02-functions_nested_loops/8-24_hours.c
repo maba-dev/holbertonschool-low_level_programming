@@ -1,11 +1,10 @@
 #include "holberton.h"
 
 /**
-* main - check the code for Holberton School students.
+* jack_bauer - Write a function that prints every minute of the day
 *
-* Return: Always 0.
+* Return: print every minute from 00:00 to 23:49
 */
-
 void jack_bauer(void)
 
 {
