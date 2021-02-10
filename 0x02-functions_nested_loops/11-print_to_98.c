@@ -16,7 +16,7 @@ void	print_to_98(int n)
 				{
 					int j ;
 					j = n / 10;
-					if (j <= 10)
+					if (j <= 10 || j == 20)
 						j = 0;
 					_putchar(n / 100 + '0');
 					_putchar(j / 10 + '0');
@@ -46,11 +46,22 @@ void	print_to_98(int n)
 					_putchar(-n + '0');
 				if (n >= 0 && n <= 9)
 					_putchar(n + '0');
-				if (n <= -10)
+				if (n <= -10 && n >= -99)
 				{
 					_putchar(-n / 10 + '0');
 					_putchar(-n % 10 + '0');
 				}
+				if (n <= -100)
+				{
+					int j ;
+					j = -n / 10;
+					if (j <= 10 || j == 20)
+						j = 0;
+					_putchar(-n / 100 + '0');
+					_putchar(j / 10 + '0');
+					_putchar(-n % 10 + '0');
+				}
+
 				if (n >= 10)
 				{
 					_putchar(n / 10 + '0');
