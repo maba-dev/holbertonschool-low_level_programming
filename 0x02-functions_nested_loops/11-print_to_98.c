@@ -14,7 +14,8 @@ void	print_to_98(int n)
 			{
 				if (n >= 100)
 				{
-					int j ;
+					int j;
+
 					j = n / 10;
 					if (j <= 10 || j == 20)
 						j = 0;
@@ -53,7 +54,8 @@ void	print_to_98(int n)
 				}
 				if (n <= -100)
 				{
-					int j ;
+					int j;
+
 					j = -n / 10;
 					if (j <= 10 || j == 20)
 						j = 0;
