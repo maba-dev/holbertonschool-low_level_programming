@@ -1,6 +1,11 @@
 #include "holberton.h"
 
-void print_diagonal(int n)
+/**
+*print_diagonal- print a diagonal line on terminal
+*@n: integer
+*/
+
+void	print_diagonal(int n)
 {
 	int i;
 	int j;
