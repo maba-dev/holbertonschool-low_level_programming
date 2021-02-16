@@ -15,13 +15,13 @@ int	_atoi(char *s)
 	i = 0;
 	result = 0;
 	n = 1;
-	while (!(s[i] >= '0' && s[i] <= '9'))
+	while (!(s[i] >= '0' && s[i] <= '9') && s[i] != '\0')
 	{
 		if (s[i] == '-')
 			n = n * (-1);
 		i++;
 	}
-	while (s[i] >= '0' && s[i] <= '9')
+	while ((s[i] >= '0' && s[i] <= '9') && s[i] != '\0')
 	{
 		result = result * 10 + s[i]  - '0';
 		i++;
