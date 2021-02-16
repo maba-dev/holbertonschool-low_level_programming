@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
-* @s: string to convert
-*  function _atoi  that convert a string to an integer
-* Return int
-*/
+ * _atoi - function that convert a string to an integer
+ * @s: string to convert
+ * Return: int
+ */
 
 int	_atoi(char *s)
 {
