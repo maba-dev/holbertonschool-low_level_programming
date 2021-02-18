@@ -9,17 +9,24 @@
 char	*rot13(char *str)
 {
 	int i;
+	int j;
+	char *x;
+	char *root_13;
 
 	i = 0;
+	x = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+	root_13 = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKZZkLlMm";
 	while (str[i] != '\0')
 	{
-		while ((str[i] >= 'A' && str[i] <= 'Z') || (str[i]  >= 'a' && str[i] <= 'z'))
+		j = 0;
+		while (x[j] != '\0')
 		{
-			if ((str[i] >= 'A' && str[i]  <= 'M') || (str[i] >= 'a' && str[i] <= 'm'))
-				str[i] = str[i] + 13;
-			else
-				str[i] = str[i] - 13;
-			i++;
+			if (str[i] == x[j])
+			{
+				str[i] = root_13[j];
+				break;
+			}
+			j++;
 		}
 		i++;
 	}
