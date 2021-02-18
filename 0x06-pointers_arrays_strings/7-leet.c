@@ -9,22 +9,22 @@
 char	*leet(char *str)
 {
 	int i;
+	int j;
+	char *x;
+	char *y;
 
 	i = 0;
+	x = "aAeEoOtTlL";
+	y = "4433007711";
 	while (str[i] != '\0')
 	{
-		if (str[i] == 'a' || str[i] == 'A')
-			str[i] = 4 + '0';
-		if (str[i] == 'e' || str[i] == 'E')
-			str[i] = 3 + '0';
-		if (str[i] == 'o' || str[i] == 'O')
-			str[i] = '0';
-		if (str[i] == 't' || str[i] == 'T')
-			str[i] = 7 + '0';
-		if (str[i] == 't' || str[i] == 'L')
-			str[i] = 1 + '0';
-		else
-			str[i] = str[i];
+		j = 0;
+		while (x[j] != '\0')
+		{
+			if (str[i] == x[j])
+				str[i] = y[j];
+			j++;
+		}
 		i++;
 	}
 	return (str);
