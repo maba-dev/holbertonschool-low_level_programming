@@ -20,10 +20,10 @@ int	_strlen_recursion(char *s)
 
 /**
 * palindrome - function that return 1 if a palindrome 0 else
-* @s : string
+* @s: string
 * @j: int
 * @i: int
-* Return : int
+* Return: 1 if string is a palindrome and 0 if not
 */
 int	palindrome(char *s, int j, int i)
 {
