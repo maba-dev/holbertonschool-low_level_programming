@@ -30,7 +30,7 @@ int	palindrome(char *s, int j, int i)
 	i  = _strlen_recursion(s);
 	if (s[j] != s[i - 1])
 		return (0);
-	if (s[j] >= s[i])
+	if (s[j] >= s[i - 1])
 		return (1);
 	else
 		return (palindrome(s, j + 1, i - 1));
@@ -45,5 +45,5 @@ int	is_palindrome(char *s)
 	int i;
 
 	i = _strlen_recursion(s);
-	return (palindrome(s, 0, i - 1));
+	return (palindrome(s, 0, i));
 }
