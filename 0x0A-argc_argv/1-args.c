@@ -7,12 +7,11 @@
 * Return: int
 */
 
-int	main(int argc, char **argv)
+int	main(int argc, char **argv __attribute__((unused)))
 {
-	int i;
-
-	i = argc - 1;
 	if (argc == 1)
-		argv[i] = argv[0];
-	printf("%d\n", i);
+		printf("0\n");
+	else
+		printf("%d\n", (argc - 1));
+	return (0);
 }
