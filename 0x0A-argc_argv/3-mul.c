@@ -10,11 +10,8 @@
 
 int	main(int argc, char **argv)
 {
-	int i;
-
-	i = 1;
 	if (argc == 3)
-		printf("%d\n", (atoi(argv[i]) * atoi(argv[i + 1])));
+		printf("%d\n", (atoi(argv[1]) * atoi(argv[2])));
 	else
 	{
 		printf("Error\n");
