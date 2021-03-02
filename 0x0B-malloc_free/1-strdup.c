@@ -1,10 +1,12 @@
 #include "holberton.h"
 #include <stdlib.h>
- /**
- * _strdup - a function that returns a pointer to a newly allocated
- * @str: char
- * Return: char
- */
+
+/**
+*_strdup - contains copy of a string as a parameter
+* @str: char
+* Return: char
+*/
+
 char	*_strdup(char *str)
 {
 	char *s;
