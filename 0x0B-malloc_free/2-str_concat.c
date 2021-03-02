@@ -25,18 +25,15 @@ char	*str_concat(char *s1, char *s2)
 		size2++;
 	if (s2 == NULL)
 		s2 = "";
-	str = malloc((size1 + size2) * sizeof(char));
+	str = malloc((size1 + size2 + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
-	while (i < size1)
+	while (i < size1 + size2)
 	{
-		str[i] = s1[i];
-		i++;
-	}
-	i = 0;
-	while (i < size2)
-	{
-		str[size1 + i] = s2[i];
+		if (i < size1)
+			str[i] = s1[i];
+		else
+			str[i] = s2[i - size1];
 		i++;
 	}
 	str[size1 + size2] = '\0';
