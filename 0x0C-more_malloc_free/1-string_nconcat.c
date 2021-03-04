@@ -19,6 +19,10 @@ char	*string_nconcat(char *s1, char *s2, unsigned int n)
 	size1 = 0;
 	size2 = 0;
 	i = 0;
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	while (s1[size1] != '\0' && s1)
 		size1++;
 	while (s2[size2] != '\0' && s2)
