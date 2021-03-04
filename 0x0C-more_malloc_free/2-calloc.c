@@ -8,20 +8,26 @@
 *Return: array
 */
 
-void *_calloc(unsigned int nmemb, unsigned int size)
+void	*_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *ptr;
 	unsigned int i;
+	unsigned int j;
 
 	i = 0;
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	ptr = malloc(nmemb * size * sizeof(*ptr));
+	ptr = malloc((nmemb * size) * sizeof(int));
 	if (ptr == NULL)
 		return (NULL);
 	while (i < nmemb)
 	{
-		ptr[i] = 0;
+		j = 0;
+		while (j < size - 1)
+		{
+			ptr[i] = 0;
+			j++;
+		}
 		i++;
 	}
 	return (ptr);
