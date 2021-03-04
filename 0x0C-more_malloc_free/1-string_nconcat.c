@@ -45,7 +45,7 @@ char	*string_nconcat(char *s1, char *s2, unsigned int n)
 		while ((size1 + size2) < i)
 		{
 			str[size1 + size2] = '\0';
-			i--;
+			size2++;
 		}
 	}
 	return (str);
