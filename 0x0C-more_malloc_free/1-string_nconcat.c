@@ -40,10 +40,6 @@ char	*string_nconcat(char *s1, char *s2, unsigned int n)
 			str[i] = s2[i - size1];
 		i++;
 	}
-	while (size2 < n)
-	{
-		str[size1 + size2] = '\0';
-		size2++;
-	}
+	str[i] = '\0';
 	return (str);
 }
