@@ -23,7 +23,12 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	res = get_op_func(argv[2]);
-	if (oj == NULL)
+	if (argv[2][1] != '\0')
+	{
+		printf("Error\n");
+		exit(98);
+	}
+	if (res == NULL)
 	{
 		printf("Error\n");
 		exit(98);
