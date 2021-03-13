@@ -26,12 +26,12 @@ int main(int argc, char *argv[])
 	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 	if (res == NULL)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
