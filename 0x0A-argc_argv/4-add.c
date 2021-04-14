@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
-* _isdigit - the digit function
-* @c: char c
-* Return: 0 or 1
-*/
-int     _isdigit(char c)
+ * _isdigit - check if char is digit
+ * @c: char to check
+ * Return: 1 if digit else 0
+ */
+int _isdigit(char c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
@@ -14,55 +14,36 @@ int     _isdigit(char c)
 		return (0);
 }
 /**
-* _isdigit_str - the digit function string
-* @s: char s
-* Return: 0 or 1
-*/
-int	_isdigit_str(char *s)
+ * main - add positives numbers passed in arguments
+ * @ac: number of arg
+ * @av: arguments
+ * Return: 1 if no digits found else 0
+ */
+int main(int ac, char **av)
 {
-	int i;
+	int i = 1;
+	int j = 0;
+	int res = 0;
 
-	i = 0;
-	while (s[i] != '\0')
+	if (ac > 1)
 	{
-		if (_isdigit(s[i]) == 0)
-			return (0);
-		i++;
-	}
-	return (1);
-}
-/**
-*main - entry point
-* @argc: count argument
-* @argv: parameter argument
-* Return: int
-*/
-int main(int argc, char **argv)
-{
-	int i;
-	int result;
-
-	i = 1;
-	result = 0;
-	if (argc == 1)
-	{
-		printf("0\n");
-		return (0);
-	}
-	while (argc > i)
-	{
-		if (_isdigit_str(argv[i]) == 0)
+		while (i < ac)
 		{
-			printf("Error\n");
-			return (1);
+			while (av[i][j])
+			{
+				if (_isdigit(av[i][j]) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
+				j++;
+			}
+			res = res + atoi(av[i]);
+			i++;
 		}
-		i++;
+		printf("%d\n", res);
 	}
-	i = i - 1;
-	while (i > 0)
-	{
-		result += atoi(argv[i]);
-		i--;
-	}
-	printf("%d\n", result);
+	else
+		printf("0\n");
+	return (0);
 }
