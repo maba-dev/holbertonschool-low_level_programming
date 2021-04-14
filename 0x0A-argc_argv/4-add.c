@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
 /**
 * _isdigit - the digit function
 * @c: char c
