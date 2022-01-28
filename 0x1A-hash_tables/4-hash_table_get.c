@@ -1,12 +1,14 @@
 #include "hash_tables.h"
 /**
- *
- * 
+ *hash_table_get - function that retrieves a value associated with a key.
+ *@ht: the hash table
+ *@key: the key associated
+ *Return: the value associated
  */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-    hash_node_t *list_tab = NULL;
+	hash_node_t *list_tab = NULL;
 	unsigned long int idx;
 
 	if (!ht || !key)
@@ -17,9 +19,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	while (list_tab)
 	{
 		if (strcmp(list_tab->key, key) == 0)
-
-		    return (list_tab->value);
-
+			return (list_tab->value);
 	}
-    return NULL;
+	return (NULL);
 }
