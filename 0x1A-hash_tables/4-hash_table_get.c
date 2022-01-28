@@ -22,6 +22,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 		if (strcmp(list_tab->key, key) == 0)
 			return (list_tab->value);
+		list_tab = list_tab->next;
 	}
 	return (NULL);
 }
