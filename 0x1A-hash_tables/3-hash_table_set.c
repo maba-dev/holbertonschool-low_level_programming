@@ -21,13 +21,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	idx = key_index((const unsigned char *)key, ht->size);
 	if (!node)
 		return (0);
-	
 	list_tab = ht->array[idx];
 	while (list_tab)
 	{
 		if (strcmp(list_tab->key, key) == 0)
 		{
-			free(list_tab->value);
 			list_tab->value = strdup(value);
 			return (1);
 		}
