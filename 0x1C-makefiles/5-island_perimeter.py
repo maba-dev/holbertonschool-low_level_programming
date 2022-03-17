@@ -1,5 +1,12 @@
 #!/usr/bin/python3
+"""
+    a function def island_perimeter(grid): that returns
+    the perimeter of the island described in grid:
+ """
+
+
 def island_perimeter(grid):
+    """the perimeter of the grid"""
     perimeter = 0
     for i in range(0, len(grid)):
         for j in range(0, len(grid[0])):
