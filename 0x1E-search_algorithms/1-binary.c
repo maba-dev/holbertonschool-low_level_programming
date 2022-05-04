@@ -10,28 +10,28 @@
 int  binary_search(int *array, size_t size, int value)
 {
 	size_t i = 0;
-    size_t mid;
-    size_t j;
+	size_t mid;
+	size_t j;
 
-    if (size < 1)
-        return (-1);
-    while (i < size)
-    {
-        printf("Searching in array: ");
-        for (j = i; j < size; j++)
-        {
-            if (j < size -1)
-                printf("%d, ", array[j]);
-            else
-                printf("%d\n", array[j]);
-        }
-        mid =  (i + size - 1) / 2;
-        if (value == array[mid])
-            return mid;
-        else if (value < array[mid])
-            size = mid;
-        else
-            i = mid + 1;
-    }
-    return (-1);
+	if (size < 1)
+		return (-1);
+	while (i < size)
+	{
+		printf("Searching in array: ");
+		for (j = i; j < size; j++)
+		{
+			if (j < size - 1)
+				printf("%d, ", array[j]);
+			else
+				printf("%d\n", array[j]);
+		}
+		mid =  (i + size - 1) / 2;
+		if (value == array[mid])
+			return (mid);
+		else if (value < array[mid])
+			size = mid;
+		else
+			i = mid + 1;
+	}
+	return (-1);
 }
